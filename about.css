@@ -1,0 +1,1224 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Averia Serif Libre', sans-serif;
+}
+
+:root {
+    --back-color: #F5F5F5;
+    --text-color: #111111;
+    --hover-color: #fe6f61;
+}
+
+.main-container {
+    width: 100%;
+}
+
+/*///////////////// 
+ ///HEADER STRAT// 
+/////////////////*/
+.header_container .top_content {
+    background-color: var(--back-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_container .top_content p {
+    font-size: 0.9rem;
+    word-spacing: 0.2rem;
+    padding: 8px 2px;
+    font-weight: 600;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 2px solid #e2e2e2;
+    padding: 10px 0px;
+}
+
+/*////////////////
+ //NAVBAR START// 
+////////////////*/
+
+/* nav left start */
+.nav_container .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_container .nav ul li {
+    list-style: none;
+    margin: 0px 10px;
+}
+
+.nav_container .nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 2px 6px;
+    color: var(--text-color);
+}
+
+.nav_container .nav ul li a:hover {
+    color: var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
+}
+.nav_container .nav ul li .active {
+    color: var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
+}
+
+/* nav left end  */
+
+/* nav bottom start  */
+.nav_container .logo h2 {
+    font-size: 1.9rem;
+    color: #141414;
+}
+
+/* nav bottom End  */
+
+/* nav right start */
+.nav_container .nav_right {
+    display: flex;
+}
+
+.nav_container .nav_right .state {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.nav_container .nav_right .state p img {
+    width: 11px;
+}
+
+.nav_container .nav_right .state span {
+    margin-left: 6px;
+    margin-right: 6px;
+    font-weight: 100;
+    opacity: .3;
+}
+
+.nav_container .nav_right .language {
+    margin-right: 10px;
+}
+
+.nav_container .nav_right_icon i {
+    width: 1.1rem;
+    margin-left: 10px;
+}
+.nav_container .nav_right_icon i:hover {
+    color: var(--hover-color);
+  }
+
+  .hambar:hover {
+    color: var(--hover-color);
+  }
+.hambar {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+/* nav right end */
+
+/*//////////////
+ //NAVBAR END//
+////////////// */
+
+/* header image start */
+.header_image {
+    margin-top: 5%;
+}
+
+.header_image_main {
+    margin: auto;
+    width: 80%;
+    height: 60vh;
+    position: relative;
+}
+
+.header_image_main .image {
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.header_image_main .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header_image_main .image::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(180deg, hsla(var(--hover-color), 24%, 40%, .3) 0%, hsla(var(--hover-color), 24%, 4%, 1) 95%);
+    left: 0;
+    top: 100%;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.header_image_main .image:hover::after {
+    top: 0;
+}
+
+.header_image_main .data {
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_image_main .data p {
+    font-size: 3rem;
+    color: var(--hover-color);
+}
+
+/* header image end */
+
+/*  //////////////
+   //HEADER END//
+  ////////////// */
+
+/* ABOUT STORE START  */
+.about_store_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_store {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /* margin: auto; */
+    padding-top: 5%;
+    /* gap: 10px; */
+}
+
+/*image start*/
+.about_image {
+    width: 45%;
+    position: relative;
+}
+
+.about_image_1 {
+    width: 60%;
+    height: 30vh;
+    box-shadow: 1px 2px 15px;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.about_image_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_image_2 {
+    width: 80%;
+    height: 37vh;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    box-shadow: 1px 2px 15px;
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.about_image_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*image end*/
+
+/* content start  */
+.about_content {
+    width: 45%;
+}
+
+.about_content_data {
+    padding-top: 10%;
+}
+
+.about_content_data h4 {
+    padding-bottom: 2%;
+    font-size: 1rem;
+}
+
+.about_content_data h2 {
+    font-size: 2.5rem;
+}
+
+.about_content_data p {
+    word-spacing: 0.3rem;
+    font-size: 1.2rem;
+    word-break: break-all;
+}
+
+.about_content_data .para_1 {
+    padding-top: 6%;
+}
+
+.about_content_data .para_2 {
+    padding-top: 3%;
+
+}
+
+/* content end  */
+
+/*////////////////////
+ // ABOUT STORE END// 
+//////////////////// */
+
+/* FASHION DEMOCRACY START */
+.fashion {
+    width: 100%;
+    background-color: var(--back-color);
+    margin-top: 10%;
+}
+
+.fashion_main {
+    width: 65%;
+    margin: auto;
+    padding: 5% 0%;
+}
+
+.fashion_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fashion_head h2 {
+    font-size: 2rem;
+    padding-bottom: 4%;
+}
+
+/* .mara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.fashion_data {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2%; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 6%;
+}
+/* 
+.fashion_left {
+    width: 50%;
+}
+
+.fashion_right {
+    width: 50%;
+} */
+
+.fashion_data p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    word-break: break-all;
+    word-spacing: 0.3rem;
+    /* padding-bottom: 25px; */
+}
+
+/* BUTTON */
+.btn_main {
+    margin: auto;
+    width: 14%;
+    padding-top: 6%;
+}
+
+.btn {
+    border: 1px solid var(--text-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 8px;
+    background-color: var(--text-color);
+    color: var(--back-color);
+    font-size: 0.9rem;
+}
+
+.btn a {
+    color: var(--back-color);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/*/////////////////////////
+ //FASHION DEMOCRACY END//
+/////////////////////////*/
+
+/*///////////////////
+ //OUR STORY START// 
+/////////////////// */
+.our_story {
+    width: 80%;
+    margin: auto;
+}
+
+.our_story_container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left */
+.our_story_left {
+    width: 50%;
+    padding-top: 9%;
+}
+
+.our_story_left_main h3 {
+    font-size: 1rem;
+}
+
+.our_story_left_main h2 {
+    font-size: 2.2rem;
+    padding-top: 3%;
+}
+
+.our_story_left_main p {
+    font-size: 1.2rem;
+    word-spacing: 0.7rem;
+    word-break: break-all;
+    padding-bottom: 20px;
+}
+
+.our_story_left_main .para {
+    padding-top: 5.5%;
+    padding-bottom: 4%;
+}
+
+/* right */
+.our_story_right {
+    width: 50%;
+}
+
+.our_story_right_main {
+    padding: 2% 3%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+.our_story_image_1 {
+    width: 50%;
+    height: 43vh;
+    overflow: hidden;
+    box-shadow: 1px 2px 15px;
+    border-radius: 10px;
+}
+
+.our_story_image_1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our_story_image_2 {
+    width: 60%;
+    height: 60vh;
+    position: absolute;
+    top: 30%;
+    right: 33%;
+    overflow: hidden;
+    box-shadow: 1px 2px 15px;
+    border-radius: 10px;
+
+}
+
+.our_story_image_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ///////////////////
+  // OUR STORY END // 
+ ////////////////////*/
+
+/* BOX */
+.box {
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.main_box {
+    border: 1px solid var(--hover-color);
+    background-color: var(--hover-color);
+}
+
+.box_data {
+    width: 80%;
+    margin: auto;
+    padding: 4% 2%;
+}
+
+.box_data p {
+    font-size: 1.2rem;
+    word-spacing: 0.3rem;
+    word-break: break-all;
+}
+
+
+
+/*  ///////////////////////
+   //IMAGE SECTION START//  
+  ///////////////////////*/
+.image_section {
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.image_section_main {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+/* left */
+.image_section_left {
+    width: 49%;
+}
+
+.section_large {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.section_large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section_small {
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    margin: 4% 0%;
+}
+
+.section_small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right */
+.image_section_right {
+    width: 49%;
+    padding-top: 7%;
+}
+
+/*/////////////////////
+ //IMAGE SECTION END//
+///////////////////// */
+
+
+/* ////////////////
+  //FOOTER START//
+ //////////////// */
+.footer {
+    margin-top: 10%;
+    width: 100%;
+    color: var(--back-color);
+    background-color: #2e2d2de0;
+}
+
+.footer_main {
+    width: 80%;
+    padding-top: 5%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.footer_top {
+    margin-bottom: 3%;
+}
+
+.heading h2 {
+    font-weight: 300;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    gap: 0.5rem;
+}
+
+.email input {
+    width: 30%;
+    padding: 15px 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.email input::placeholder {
+    font-size: 1rem;
+}
+
+.email .button {
+    width: 10%;
+}
+
+/* Footer Box Start */
+.footer_data {
+    width: 100%;
+    /* margin-bottom: 2%; */
+    margin: auto;
+}
+
+.footer_data_main {
+    /* display: flex; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 4%;
+    padding: 0 10px;
+}
+
+
+.footer_box {
+    /* width: 20%; */
+    padding: 1% 1.5%;
+}
+
+
+.footer_box h2 {
+    padding-bottom: 10%;
+    font-size: 1.5rem;
+}
+
+.footer_box h4 {
+    padding-bottom: 10%;
+    font-size: 1rem;
+}
+
+.footer_box p {
+    padding-bottom: 3%;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.footer_box i {
+    padding: 2%;
+    font-size: 1rem;
+}
+
+/* Footer Box End */
+.footer_last {
+    border-top: 1px solid rgb(114, 111, 111);
+    width: 100%;
+}
+
+.footer_last p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 100;
+    padding: 1%;
+    text-align: center;
+}
+
+/* //////////////
+  //FOOTER END//
+ ////////////// */
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 1024px) {
+    .header_image_main .data {
+        top: 32%;
+        left: 28%;
+    }
+
+    .header_image_main .data p {
+        font-size: 3rem;
+    }
+
+    .about_content_data p {
+        font-size: 1rem;
+    }
+
+    .about_content_data h2 {
+        font-size: 2.3rem;
+    }
+
+    /* btn */
+
+    .btn_main {
+        width: 17%;
+    }
+
+    .btn {
+        padding: 17px 7px;
+        font-size: 0.8rem;
+    }
+
+    /* Who we are */
+
+    .our_story_image_2 {
+        width: 65%;
+        height: 50vh;
+        top: 30%;
+        right: 33%;
+        overflow: hidden;
+    }
+
+    .our_story_left_main p {
+        font-size: 1.1rem;
+        font-weight: 100;
+        word-spacing: 0.3rem;
+        padding-bottom: 20px;
+        padding-right: 3%;
+    }
+
+    .our_story_left_main .para {
+        padding-top: 4.2%;
+        padding-bottom: 2.5%;
+    }
+
+    .our_story_image_2 {
+        width: 70%;
+        height: 85vh;
+        top: 30%;
+        right: 28%;
+    }
+
+    .our_story_image_1 {
+        width: 60%;
+        height: 55vh;
+    }
+
+    /* BOX */
+    .box {
+        padding-top: 12%;
+    }
+
+    .box_data p {
+        font-size: 1.1rem;
+    }
+
+    /* FOOTER START */
+    .footer_box p {
+        padding-bottom: 3%;
+        font-size: 0.9rem;
+        font-weight: 100;
+    }
+
+    .footer_main {
+        width: 100%;
+        padding-top: 5%;
+        margin: auto;
+    }
+    .footer_data_main {
+        width: 95%;
+    }
+
+    /* FOOTER END */
+}
+
+/* TABLIET */
+@media only screen and (max-width: 786px) {
+    .nav_container .nav ul li {
+        list-style: none;
+        margin: 0px 4px;
+    }
+
+    .nav_container .nav ul li a {
+        font-size: 1rem;
+        padding: 2px 6px;
+    }
+
+    .header_image_main .data {
+        top: 32%;
+        left: 23%;
+    }
+
+    .header_image_main .data p {
+        font-size: 1.9rem;
+        font-weight: 800;
+    }
+
+    /* about store */
+    .about_store {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 12%;
+    }
+
+    .about_image {
+        width: 100%;
+    }
+
+    .about_content {
+        width: 100%;
+        padding-top: 20%;
+    }
+
+    .about_image_2 {
+        width: 65%;
+        height: 32vh;
+        top: 25%;
+        left: 35%;
+    }
+
+    .about_image_1 {
+        width: 45%;
+        height: 27vh;
+    }
+
+    .about_content_data {
+        padding-top: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* FASHION DEMOCRACY */
+    .fashion_main {
+        width: 88%;
+        padding: 8% 0%;
+    }
+
+
+    .fashion_head h2 {
+        font-size: 2.2rem;
+        padding-bottom: 6%;
+    }
+
+    .fashion_data p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .fashion_data {
+        flex-direction: column;
+    }
+.fashion_data {
+    gap: 3%;
+}
+.btn_main {
+    margin-top: 10%;
+}
+    .fashion_left {
+        width: 100%;
+    }
+
+    .fashion_right {
+        width: 100%;
+    }
+
+    /* BUTTON */
+    .btn_main {
+        width: 24%;
+    }
+
+    .btn {
+        padding: 13px 0px;
+        font-size: 0.8rem;
+    }
+
+    .btn a {
+        text-decoration: none;
+        margin-right: 3px;
+        font-size: 0.7rem;
+    }
+
+    .btn .fa-solid,
+    .fas {
+        font-weight: 900;
+        font-size: 0.7rem;
+    }
+
+
+    /* Who we are */
+    .our_story_container {
+        padding-top: 10%;
+        flex-direction: column;
+    }
+
+    .our_story_left {
+        width: 100%;
+        padding-top: 9%;
+    }
+
+    .our_story_left_main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our_story_left_main h2 {
+        font-size: 2.2rem;
+        margin: 0.9% 0%;
+    }
+
+    .our_story_left_main p {
+        font-size: 1rem;
+    }
+
+    .our_story_right {
+        width: 100%;
+    }
+
+    .our_story_image_1 {
+        width: 58%;
+        height: 40vh;
+    }
+
+    .our_story_image_2 {
+        width: 60%;
+        height: 47vh;
+        right: 40%;
+    }
+
+    /* BOX */
+    .box {
+        padding-top: 29%;
+    }
+
+    .box_data p {
+        font-size: 1rem;
+    }
+
+    /* SECTION IMAGE START */
+    .image_section_main {
+        width: 67%;
+    }
+
+    .image_section_right {
+        padding-top: 15%;
+    }
+
+    /* SECTION IMAGE END */
+
+
+    /* FOOTER START */
+    .heading {
+        font-size: 0.9rem;
+    }
+
+    .email input {
+        width: 38%;
+        padding: 10px 5px;
+
+    }
+
+    .email .button {
+        width: 20%;
+    }
+
+    .footer_main {
+        padding-bottom: 10%;
+    }
+
+    /* FOOTER END */
+
+}
+
+@media only screen and (max-width: 720px) {
+    
+     /* NAVBAR START  */
+     .header_container {
+        position: relative;
+        overflow: hidden;
+
+        height: 100%;
+    }
+    
+    .nav_control {
+        overflow: hidden;
+        transition: .3s;
+    }
+
+
+    .nav {
+        width: 100%;
+        position: absolute;
+        height: 450px;
+        left: -500px;
+        top: 0;
+    }
+
+    .close {
+        position: absolute;
+        right: 2%;
+        top: 0.5%;
+    }
+
+   
+    .nav_container .nav ul {
+        flex-direction: column;
+        padding-top: 50%;
+        margin-top: 2%;
+    }
+
+    .nav ul li {
+        padding: 8px 0px;
+    }
+    .nav_container .nav ul li a{
+        
+        font-size: 1rem;
+    }
+    .hambar {
+        display: block;
+    }
+
+    .nav.active {
+        left: 0;
+        top: 0;
+        transition: .3s;
+        background-color: var(--head-color);
+    }
+
+    .nav.active li {
+        margin: 10px 0;
+    }
+
+    /* NAVBAR END  */
+    .footer_data {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* LARGE MOBILE */
+@media only screen and (max-width: 425px) {
+    .header_image_main {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .header_image_main .data {
+        top: 32%;
+        left: 18%;
+    }
+
+    .header_image_main .data p {
+        font-size: 1.9rem;
+    }
+
+    /* About Store */
+    .about_content_data h2 {
+        font-size: 2rem;
+    }
+
+    .about_store {
+        width: 95%;
+    }
+
+    .about_image {
+        width: 93%;
+        margin-left: 9%;
+    }
+
+    .about_image_1 {
+        width: 41%;
+        height: 17vh;
+    }
+
+    .about_image_2 {
+        width: 52%;
+        height: 22vh;
+        top: 25%;
+        left: 28%;
+    }
+
+    /* FASHION DEMOCRACY */
+    .btn_main {
+        width: 30%;
+    }
+
+    .fashion_head h2 {
+        font-size: 1.9rem;
+    }
+
+    .fashion_main {
+        width: 96%;
+    }
+
+    /* Who we are */
+    .our_story {
+        width: 95%;
+        margin: auto;
+    }
+
+    .our_story_right_main {
+        padding: 2% 0%;
+        padding-right: 10%;
+    }
+
+    .our_story_left_main p {
+        padding-right: 0%;
+    }
+
+    .our_story_image_1 {
+        width: 48%;
+        height: 19vh;
+    }
+
+    .our_story_image_2 {
+        width: 50%;
+        height: 24vh;
+        right: 37%;
+    }
+
+    /* BOX */
+    .box {
+        width: 95%;
+    }
+
+    /* SECTION IMAGE START */
+    .image_section_main {
+        width: 95%;
+    }
+
+    /* SECTION IMAGE END */
+
+    /* FOOTER START */
+    .footer_data_main {
+        gap: 2%;
+    }
+
+    .heading {
+        font-size: 0.8rem;
+    }
+
+    .email {
+        gap: 0.3rem;
+    }
+
+    .email input {
+        width: 55%;
+        padding: 6px 5px;
+    }
+
+    .footer_main {
+        padding-bottom: 15%;
+    }
+
+    /* FOOTER END */
+}
+
+/* MEDIUM MOBILE */
+@media only screen and (max-width: 375px) {
+
+    /* NAVBAR START */
+    .fa-solid,
+    .fas {
+        font-size: 1rem;
+    }
+
+    .nav_container .logo h2 {
+        font-size: 1.7rem;
+    }
+
+    .header_container .top_content p {
+        font-size: 0.7rem;
+    }
+
+    .header_image_main .data {
+        top: 32%;
+        /* left: 7%; */
+    }
+
+    .header_image_main .data p {
+        font-size: 1.7rem;
+    }
+
+    /* NAVBAR END */
+
+
+    /* FOOTER START */
+    .email input {
+        width: 60%;
+        padding: 6px 5px;
+    }
+
+    .email .button {
+        width: 22%;
+    }
+
+    .footer_box h2 {
+        padding-bottom: 2%;
+        font-size: 1.5rem;
+    }
+
+    .footer_box h4 {
+        padding-bottom: 6%;
+        font-size: 1rem;
+    }
+
+    /* FOOTER END */
+
+}
+
+/* SMALL MOBILE */
+@media only screen and (max-width: 320px) {
+
+
+    .fa-solid,
+    .fas {
+        font-size: 0.8rem;
+    }
+
+    .header_image_main .data {
+        top: 32%;
+        /* left: 4%; */
+    }
+
+    .header_image_main .data p {
+        font-size: 1.6rem;
+    }
+}
